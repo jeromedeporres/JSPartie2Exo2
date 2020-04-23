@@ -6,13 +6,15 @@
 </head>
 <body>
     <script>
-        var age  = prompt('Votre age');
-        if ( age > 18) {
-	    alert ('Vous êtes majeur');
+        var age = prompt('Quel est votre âge?');
+        if (( age >= 18) && (age <=130)) {
+	        alert ('Vous êtes majeur');
         }
-        else {
-	    alert ('Vous êtes mineur');
-        }    
+        else if ((age <= 18) && (age >= 0)) {
+            alert ('Vous êtes mineur');
+        }else {
+            alert('Ceci n\'est pas un âge valid');
+        }     
 </script>
 </body>
 </html>
